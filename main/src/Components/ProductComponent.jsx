@@ -7,15 +7,15 @@ const ProductComponent = () => {
   console.log("products", products);
   return (
     <>
-      {products.map((item) => {
+      {products?.map((item) => {
         return (
           <Link to={`/products/${item.id}`}>
             <div
               style={{
                 display: "flex",
                 flexDirection: "column",
-                width: "400px",
-                height: "320px",
+                width: "350px",
+                height: "270px",
                 justifyContent: "center",
                 alignItems: "center",
                 boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
