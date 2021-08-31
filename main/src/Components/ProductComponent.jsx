@@ -15,7 +15,7 @@ const ProductComponent = () => {
                 display: "flex",
                 flexDirection: "column",
                 width: "350px",
-                height: "270px",
+                height: "280px",
                 justifyContent: "center",
                 alignItems: "center",
                 boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
@@ -25,7 +25,7 @@ const ProductComponent = () => {
               key={item.id}
             >
               <div>
-                <img src={item.image} alt="" width="100px" height="100px" />
+                <img src={item.image} alt="" width="150px" height="150px" />
               </div>
               <div>
                 <h4>{item.title}</h4>
