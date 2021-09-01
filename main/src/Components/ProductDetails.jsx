@@ -7,6 +7,7 @@ import {
   removeProducts,
   fetchProductbyId,
 } from "../Redux/actions/productActions";
+import "./style.css";
 
 const ProductDetails = () => {
   const { id } = useParams();
@@ -34,13 +35,7 @@ const ProductDetails = () => {
   }, [id]);
 
   return (
-    <div
-      style={{
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
+    <div className="productdetails-cont">
       {Object.keys(products).length === 0 ? (
         <div>
           <img
@@ -49,77 +44,18 @@ const ProductDetails = () => {
           />
         </div>
       ) : (
-        <div
-          style={{
-            display: "flex",
-            width: "80vw",
-            height: "80vh",
-            justifyContent: "center",
-            alignItems: "center",
-            border: "1px solid lightgray",
-          }}
-        >
-          <div
-            style={{
-              border: "1px solid lightgray",
-              width: "50%",
-              height: "80vh",
-              objectFit: "contain",
-              display: "flex",
-              flexDirection: "column",
-              justifyContent: "center",
-            }}
-          >
+        <div className="productdetails-subCont">
+          <div className="productdetails-leftcont">
             <img src={image} alt="" width="90%" height="90%" />
           </div>
-          <div
-            style={{
-              width: "50%",
-              height: "80vh",
-              display: "flex",
-              flexDirection: "column",
-              justifyContent: "center",
-
-              gap: "20px",
-              padding: "20px",
-            }}
-          >
+          <div className="productdetails-rightcont">
             <h2>{title}</h2>
-            <button
-              style={{
-                outline: "none",
-                border: "none",
-                background: "Green",
-                width: "80px",
-                height: "40px",
-              }}
-            >
-              $ {price}
-            </button>
-            <button
-              style={{
-                outline: "none",
-                border: "none",
-                background: "gray",
-                width: "100%",
-                height: "40px",
-              }}
-            >
+            <button className="productdetails-btn">$ {price}</button>
+            <button className="productdetails-btn productdetails-btn2">
               {category}
             </button>
             <p style={{ color: "gray" }}>{description}</p>
-            <button
-              style={{
-                outline: "none",
-                border: "none",
-                background: "orange",
-                width: "100px",
-                height: "40px",
-                color: "#fff",
-              }}
-            >
-              Add to cart
-            </button>
+            <button className="productdetails-addbtn">Add to cart</button>
           </div>
         </div>
       )}

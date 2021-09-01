@@ -1,0 +1,123 @@
+/* styles for product details page */
+
+.productdetails-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.productdetails-subCont {
+  display: flex;
+  width: 80vw;
+  min-height: 80vh;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid lightgray;
+}
+.productdetails-leftcont {
+  border: 1px solid lightgray;
+  width: 50%;
+  height: 80vh;
+  object-fit: contain;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.productdetails-rightcont {
+  width: 50%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.productdetails-btn {
+  outline: none;
+  border: none;
+  background-color: greenyellow;
+  width: 80px;
+  height: 40px;
+}
+.productdetails-btn2 {
+  background-color: lightgray;
+  width: 100%;
+}
+
+.productdetails-addbtn {
+  outline: none;
+  border: none;
+  background: orange;
+  width: 100px;
+  height: 40px;
+  color: #fff;
+}
+
+@media only screen and (max-width: 600px) {
+  .productdetails-subCont {
+    flex-direction: column;
+  }
+  .productdetails-subCont img {
+    height: 100px;
+  }
+}
+
+/* Product components */
+
+.productcomponent-cont {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  height: 280px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin: 10px;
+  padding: 5px;
+}
+
+/* Product listing page */
+
+.productlisting-input {
+  display: flex;
+  justify-content: center;
+}
+
+.productlisting-input input {
+  border: none;
+  outline: none;
+  height: 25px;
+  width: 300px;
+}
+
+.productlisting-sortcont {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.productlisting-select {
+  background-color: black;
+  color: #fff;
+  width: 150px;
+  height: 30px;
+  border: none;
+  outline: none;
+  margin: 10px;
+}
+
+.productlisting-clearbtn {
+  width: 100px;
+  height: 30px;
+  background-color: black;
+  margin: 10px;
+  color: #fff;
+  border: none;
+  outline: none;
+}
+
+.productlisting-label {
+  font-size: 20px;
+  font-weight: 600;
+}
