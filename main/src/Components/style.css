@@ -88,7 +88,7 @@
   border: none;
   outline: none;
   height: 25px;
-  width: 300px;
+  width: 350px;
 }
 
 .productlisting-sortcont {
@@ -120,4 +120,15 @@
 .productlisting-label {
   font-size: 20px;
   font-weight: 600;
+}
+
+@media only screen and (max-width: 600px) {
+  .productlisting-sortcont {
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+  }
+  .productlisting-label {
+    font-size: 15px;
+  }
 }
